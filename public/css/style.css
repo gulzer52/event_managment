@@ -1,0 +1,299 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*------Navbar Start------*/
+
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 8;
+}
+.navbar{
+	background: #454fc5!important;
+	z-index: 10!important;
+}
+
+.navbar-nav li{
+	padding: 0 10px;
+
+}
+.navbar-nav li a{
+	float: right;
+	text-align: left;
+	
+}
+#nav-bar ul li a:hover{
+	color: #1a5a0e!important;
+}
+.navbar-toggler{
+	border:none!important;
+}
+.nav-link{
+	color: white!important;
+	font-weight: 600;
+	font-size: 16px;
+}
+#slider{
+	width: 100%;
+}
+.carousel-caption{
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: inherit!important;
+}
+.carousel-caption h5{
+	color: #2fffec;
+	font-size: 42px;
+}
+.carousel-caption p{
+	color: #2fffec;
+}
+
+/*--------------------Speakers------------*/
+#team{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-top: 50px;
+	background: chocolate;
+}
+h1{
+	text-align: center;
+	color: #555!important;
+	padding-bottom: 10px;
+}
+h1::after{
+	content: '';
+	background:#007bff;
+	display: block;
+	height: 3px;
+	width: 240px;
+	margin: 20px auto 5px;
+}
+.profile-pic{
+	margin-top: 25px;
+	border: 5px solid grey;
+	text-align: center;
+	background: rgb(204, 10, 36);
+	box-shadow: 0 0 6px 3px #083805;
+	padding:10px;
+}
+.profile-pic .img-box{
+	opacity: 1;
+	display: block;
+	position: relative;
+	left: 30%;
+	padding-left: 0px;
+}
+.profile-pic .img-box img{
+	filter: grayscale(1);
+}
+.profile-pic .img-box img:hover{
+	filter: grayscale(0);
+	cursor: pointer;
+}
+.profile-pic h2{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #007bff;
+}
+.profile-pic h3{
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+#team .fa{
+	height: 25px;
+	width: 25px;
+	color: #15b51a !important;
+	background:#fff;
+	padding: 4px;
+	border-radius: 50%;
+}
+.img-box ul{
+	padding: 10px 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 40%;
+	transform: translateX(-100%);
+	opacity: 0;
+}
+.img-box ul li{
+	padding: 1px;
+	display: inline-block;
+}
+.img-box:hover ul{
+	opacity: 1;
+}
+.img-box ul, .img-box ul li{
+	transition: 0.5s;
+}
+
+/*------------------Tickets--------------*/
+#price{
+	padding: 40px 0;
+	background:#efefef;
+}
+.single-price{
+	margin: 10px auto;
+	display: inline;
+	float: left;
+	width: 100%;
+	background-color: #fff;
+	transition: 0.5s;
+}
+.single-price:hover{
+	box-shadow: 0 2px 20px #333;
+}
+.price-head{
+	background-color:#1a5a0e;
+	display: inline;
+	float: left;
+	padding: 10px 5px;
+	text-align: center;
+	width: 100%;
+}
+.price-head h2{
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 5px;
+	text-transform: uppercase;
+}
+.price-head p{
+	font-size: 25px;
+	color: #ccc;
+	font-weight: bold;
+	line-height: 30px;
+}
+#price span{
+	font-size: 15px;
+}
+.price-content{
+	display: inline;
+	float: left;
+	width: 100%;
+	padding: 0 15px;
+}
+.price-content ul li{
+	border-bottom: 1px solid #efefef;
+	padding: 15px 10px;
+	list-style: none;
+}
+ul li:last-child{
+	border:none;
+}
+.fa-check-circle{
+	color: green;
+	margin-right: 10px;
+	font-size: 20px;
+}
+.fa-times-circle{
+	color: red;
+	margin-right: 10px;
+	font-size: 20px;
+}
+.price-button{
+	display: inline;
+	float: left;
+	padding: 15px 15px 30px;
+	text-align: center;
+	width: 100%;
+}
+.buy-btn{
+	background-color: #1a5a0e;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 18px;
+	padding: 15px 50px;
+	transition: 0.5s;
+}
+.buy-btn:hover{
+	border-color: 1px solid #fff;
+	background-color: #3f51b5;
+}
+a{
+	text-decoration: none!important;
+	color: #fff!important;
+}
+
+/*--------------------Contact------------------*/
+#contact{
+	background:#efefef;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #777;
+}
+.contact-form{
+	padding: 15px;
+}
+.form-control{
+	border-radius: 0!important;
+	border:none!important;
+}
+::placeholder{
+	color: #999!important;
+}
+.follow{
+	background:#fff;
+	padding: 10px;
+	margin: 15px;
+}
+.contact-info .fa{
+	margin: 10px;
+	color: #15b51a;
+	font-weight: bold;
+}
+#footer{
+	background:#333;
+	color: #fff;
+	padding: 12px;
+	margin-bottom: 0px;
+}
+.fa-heartbeat{
+	margin: 3px;
+	color: red;
+}
+#footer p{
+	text-align: center;
+	font-size: 20px;
+}
+/*Countdownt watch*/
+.conutdownContainer{
+	
+	transform: translateX(30%) translateY(0%);
+	text-align: center;
+	background: #7eb37e;
+	color:#1f1717;
+	padding: 10px;
+	box-shadow: 0 0 6px 3px #083805;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.info{
+	font-size: 80px;
+}
+/*Shedule Section*/
+.tableSection{
+	background: deepskyblue;
+	color: white;
+	font-size: 30px;
+}
+.dataSection{
+	font-size: 20px;
+}
+.sheduleHeader{
+	color: white;
+	margin: 10px;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+#sheduleSection{
+	border:2px solid cornflowerblue;
+	margin-top: 40px;
+	background: crimson;
+}
